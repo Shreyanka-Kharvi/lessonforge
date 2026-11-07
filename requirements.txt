@@ -1,0 +1,10 @@
+streamlit>=1.40
+requests
+beautifulsoup4
+python-dotenv
+pandas
+python-docx
+ddgs
+anthropic
+google-genai
+openai
