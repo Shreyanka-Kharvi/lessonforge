@@ -6,10 +6,12 @@ writes a **45-minute lesson**, audits it with **two independent QC layers**, let
 
 ## Quick start
 ```bash
-python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env        # add ONE API key (Anthropic, Gemini or OpenAI)
-streamlit run app.py
+   python -m venv .venv
+   .venv\Scripts\activate        # Mac/Linux: source .venv/bin/activate
+   pip install -r requirements.txt
+   copy .env.example .env        # Mac/Linux: cp .env.example .env
+   (edit .env: set LLM_PROVIDER and add ONE API key)
+   python -m streamlit run app.py
 ```
 Click a **Test 1 / Test 2** button in the sidebar to load the sample inputs.
 
@@ -42,6 +44,4 @@ Click a **Test 1 / Test 2** button in the sidebar to load the sample inputs.
 - Video content is judged from title/description, not the transcript.
 
 ## Resources and AI acknowledgement
-Built with Streamlit, DuckDuckGo search (`ddgs`), Google Books API, YouTube Data API, BeautifulSoup,
-python-docx. AI assistants (Claude) were used for coding help and for the lesson/QC generation inside
-the tool; I reviewed and can explain all of the code.
+Built with Streamlit, DuckDuckGo search (ddgs), Google Books API, YouTube Data API, BeautifulSoup and python-docx. Lesson writing and QC use Gemini (gemini-2.5-flash).Designed and built by Shreyanka Kharvi. I used AI assistants and I tested, debugged and can explain every part of the implementation.
